@@ -1,6 +1,10 @@
 Name:
  My Workflow 
    on: repository_dispatch: types: [my_event_type] 
+     push:
+       - 'main'
+     pull_request:
+       - 'main'
 jobs: 
     build: runs-on: 
             ubuntu-latest  

@@ -19,6 +19,7 @@ jobs:
 
    steps:  
      - name: Checkout code                   
-       uses: actions/checkout@1 # Run your automation framework here 
+       uses: actions/checkout@3 # Run your automation framework here 
+     - uses: actions/checkout@3.2.0
      - name: Run my automation framework 
        run: ./my-framework.sh
